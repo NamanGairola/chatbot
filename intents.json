@@ -1,0 +1,42 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {"tag": "hours",
+         "patterns": ["What hours are you open?", "What are your hours?", "When are you open?" ],
+         "responses": ["We're open 24x7.", "We are open anytime, everyday."]
+        },
+        {"tag": "courses",
+         "patterns": ["Which courses do you have?", "What kinds of courses are there?", "What do you provide?" ],
+         "responses": ["We provide courses on c, c++, python,java etc.", "We have many courses."]
+        },
+        {"tag": "payments",
+         "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ],
+         "responses": ["We accept VISA, Mastercard.", "We accept most major credit cards."]
+        },
+        {"tag": "opentoday",
+         "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
+         "responses": ["We're open every day.", "We are open 24x7."]
+        },
+        {"tag": "mentor",
+         "patterns": ["Can we have a mentor?", "I'd like to have a mentor", "do we get mentor?" ],
+         "responses": ["Yes you will get a mentor?"],
+         "context_set": "rentalday"
+        },
+        {"tag": "today",
+         "patterns": ["today"],
+         "responses": ["For enrolling to course today please call 1-800-courses", "For enrolling today please call 1-800-courses"],
+         "context_filter": "rentalday"
+        }
+   ]
+}
